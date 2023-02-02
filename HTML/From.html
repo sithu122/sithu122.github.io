@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+</head>
+<body>
+    <h1>Student Registrstion From</h1>
+    <form action="StudentAction.php" method="POST">
+        <label for="">Name</label>
+        <input type="text" name="Stu_name" id="name">
+        <br><br>
+        <label for="">Email</label>
+        <input type="email" name="Stu_name" id="email">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="Stu_password" id="password">
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="Stu_phone" id="phone">
+        <br><br>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="Stu_dob" id="dob">
+        <br><br>
+        <label for="passport">Passpor</label>
+        <input type="file" accept="image/*" nanme="Stu_passport" id="passport">
+        <br><br>
+        <label for="year">Year</label>
+        <select name="Stu_year" id="year">
+            <option value="">Chose your Year</option>
+            <option value="first">First Year</option>
+            <option value="second">Second Year</option>
+            <option value="third">Third Year</option>
+        </select>
+        <br><br>
+        <label for="">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+        <br><br> 
+        <label for="">Hobby</label>
+        <br>
+        <input type="chekbox" name="travelling" id="travelling" value="travelling"><label for="travelling">Travelling</label>
+        <input type="chekbox" name="gaming" id="gaming" value="gaming"><label for="gaming">Gaming</label>
+        <input type="chekbox" name="moving" id="moving" value="moving"><label for="moving">Moving</label>
+        <br><br>
+        <label for="adress">Adress</label>
+        <textarea name="Stu_adress" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="time" name="" value="">
+        <input type="week" name="" value="">
+        <input type="datetime_local" name="" value="">
+        <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
