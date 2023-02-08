@@ -5,4 +5,81 @@ h1{
     /*color: rgb(rgb(71, 65, 65), rgb(55, 65, 55), rgb(62, 62, 73));=>250*/
     text-align: center;
     font-size: 50px;
+    width: 80%;
+    background-color: red;
 }
+/* {
+    color: darkgoldenrod;
+    font-style: italic;
+    background-color: darkblue;
+}
+
+/* tags and elements selector */
+h1 {
+    text-align: center;
+}
+
+/* Attribute selector */
+a[title="Google"]{
+    color: black;
+}
+a[title="Facebook"]{
+    color: blue;
+}
+
+/* ID selector */
+#one {
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* class selector */
+.two {
+    color: gold;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+/* Descendent selector */
+.desc a{
+    color: darkorange;
+}
+
+/* Child selector */
+.kid > a {
+    color: azure;
+}
+
+/* pseudo selector */
+a:link {
+    color: brown;
+    text-decoration: none;
+}
+a:hover {
+    color: aqua;
+    text-decoration: double;
+}
+a:active{
+    color: blueviolet;
+}
+a:visited {
+    color: chartreuse;
+}
+/* target */
+
+p:target{
+    color: blueviolet;
+    border: 2px solid yellow;
+}
+
+
+
+
+
+
+
+
+
