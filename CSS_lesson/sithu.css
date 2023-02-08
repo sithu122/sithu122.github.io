@@ -4,14 +4,15 @@ h1{
     /*color: #fffffff; r g h =>0->9->a->f hex code*/
     /*color: rgb(rgb(71, 65, 65), rgb(55, 65, 55), rgb(62, 62, 73));=>250*/
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
     width: 80%;
-    background-color: red;
+    /* background-color: red; */
 }
 /* {
     color: darkgoldenrod;
     font-style: italic;
     background-color: darkblue;
+    
 }
 
 /* tags and elements selector */
@@ -73,6 +74,60 @@ a:visited {
 p:target{
     color: blueviolet;
     border: 2px solid yellow;
+}
+/* border */
+.borderone{
+    border: 20px dotted green;
+}
+.bordertwo{
+    border-bottom: 5px solid red;
+    border-top: 20px dotted green;
+}
+.borderstyle{
+    /* border-style: solid; */
+    /* all Four T R B L */
+    border-style: solid dotted;
+    /* T&B / L&R */
+    /* border-style: solid dotted double; */
+    /* T / L & R/B */
+    border-style: dashed solid dotted double;
+    /* T / R / B / L */
+}
+.bordercolor{
+    border-style: dotted;
+    border-color: green;
+}
+
+.borderwidth{
+    border-style: dotted;
+    border-width: 20px;
+}
+/* margin */
+.margin{
+    border-style: double;
+    border-color: blueviolet;
+    border-width: 1px;
+    /* margin: 40px ; */
+    /* all four */
+    /* margin: 30px 50px; */
+    /* T&B / L&R  */
+    /* margin: 10px 30px 50px; */
+    /* T  /L&R/ B  */
+    margin: 10px 30px 20px 40px;
+    /* T / L/ B /R */
+
+}
+.margintwo{
+    border: 10px dotted green;
+    margin-left: 30px;
+    /* margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 40px; */
+}
+/* padding */
+.padding{
+    border: 3px solid blue;
+    padding: 50px;
 }
 
 
