@@ -129,12 +129,52 @@ p:target{
     border: 3px solid blue;
     padding: 50px;
 }
+/* Inline  */
+.inline{
+    border: 1px solid black;
+    color: blue !important;
+    /* display: block; */
+    display: inline-block;
+    width: 200px;
+}
+/* block Layout */
+.block{
+    border: 1px solid green;
+    width: 200px;
+    display: inline-block;
+}
+/* Float */
+.float_left img{
+    width: 30%;
+    /* height: 20%; */
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.float_right img{
+    width: 30%;
+    float:right ;
+}
+/* gird */
+.gridone div, .gridtwo div{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
 
+.gridone{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
 
-
-
-
-
+.gridtwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    /* grid-gap: 40px; */
+}
 
 
 
