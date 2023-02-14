@@ -157,13 +157,13 @@ p:target{
     float:right ;
 }
 /* gird */
-.gridone div, .gridtwo div{
+.gridone div, .gridtwo div, .gridthree div,.gridfour div{
     color: aliceblue;
     text-align: center;
     padding: 20px;
 }
 
-.gridone{
+.gridone,.gridthree,.gridfour{
     display: grid;
     grid-template-columns: auto auto auto ;
 }
@@ -175,6 +175,60 @@ p:target{
     grid-row-gap: 40px;
     /* grid-gap: 40px; */
 }
+.colunmadd{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.rowadd{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 3;
+}
+/* position */
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
 
+.relative{
+    border: 1px solid green;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.absolute_parent{
+    border: 1px solid rgb(100, 167, 100);
+    width: 1000px;
+    height: 500px;
+    position: relative;
 
+}
+.absolute{
+    border: 1px solid green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
 
+}
+/* Font */
+.online{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+}
+@font-face {
+    font-family: loster;
+    src: url(Lobster/SassyFrass-Regular.ttf);
+}
+.offline{
+    font-family: 'Sassy Frass', cursive;
+}
