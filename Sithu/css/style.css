@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Crete_Round ;
+    src: url("../Crete_Round/CreteRound-Regular.ttf");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Crete_Round ;
+}
+/* nav Start */
+.nav{
+    box-shadow: 0px 0px 8px rgba(0,0 ,0 ,5  );
+}
+.Logo{
+    width: 200px;
+    height: 150px;
+    margin-top:5px;
+    margin-left: 20px;
+    /* margin-bottom: 10px; */
+
+}
+.navbar{
+    /* float: left; */
+    display: inline-block;
+}
+.nav ul{
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+    margin-top: 80px ;
+    margin-right: 40px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover{
+    color: red;
+
+}
+/* nav End */
+/* Start Bunner */
+.bunner_image{
+    width: 100%;
+}
+.bunner_text{
+    margin: 0px 20px;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    color: white;
+    background-color:rgba(42, 40, 40, 0.6);
+}
+.bunner_text p{
+    margin: 10px 20px ;
+}
+.show_now{
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: 1px solid red ;
+}
+
+/* End Bunner */
+
+/* Start Support */
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+
+}
+.support div{
+    display: inline-block;
+}
+.support div p{
+    display: inline-block;
+    margin-left: 5px;
+}
+.support div{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+.support div p span{
+    /* font-weight: lighter; */
+    color: gray;
+}
+/* End Support */
+/* Start Promation */
+.title{
+    margin-top:50px ;
+    margin-left: 80px;
+    font-weight: unset;
+}
+.divided{
+    width: 80px;
+    margin-left:80px ;
+    border: 2px solid red;
+}
+.promation{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-gap: 30px;
+
+}
+.promation div img{
+    width: 100%;
+}
+.promation-item{
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+.product-name{
+    text-align: center;
+}
+.promotion-discount{
+    position: relative;
+    bottom: 85%;
+    /* left: 60%;
+    right: 100%; */
+
+
+}
+.current-price{
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    width: 40%;
+    text-align: center;
+    /* font-size: 16px; */
+}
+.discount{
+    text-decoration: line-through;
+    color: red;
+    font-size: 15PX;
+}
