@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    <h1>Data Type</h1>
+
+    <script>
+
+        //string data type
+        //let name="Si Thu Win Htay"
+        //let name='Si Thu Win Htay'
+        let name=`Si Thu Win Htay`;
+        console.log(name);
+        console.log(typeof(name))
+
+        // numeric data Type
+        let age=27
+        console.log(age);
+        console.log(typeof(age));
+
+
+        // boolen Data type
+        let single=true;
+        console.log(single);
+        console.log(typeof(single));
+
+        // undifined 
+        let myBaby;
+        console.log(myBaby);
+
+        // NULL
+        let son=null;
+        console.log(son);
+        console.log(typeof(son));
+
+        // array 1
+        let arr1=new Array('a','b','c',1,2,3,);
+        // let student_array=new array('Mg mg','Ma Ma','Aung Aung');
+        console.log(arr1);
+        console.log(arr1[1]);
+        // array 2
+        let arr2=['a','b','c',1,2,3,]
+        console.log(arr2);
+        console.log(arr2[3])
+
+        // multiarray
+        let multiArray=['Mg Mg','Hla Hla',['Aye Aye','Mya Mya'],'Aung Aung']
+        console.log(multiArray);
+        console.log(multiArray[2][1]);
+
+        // object
+        let student={
+            name:'Mya Mya',
+            color:['white','black'],
+            age:'13old',
+            qty:2
+        }
+        console.log(student);
+        console.log(student.name);
+        console.log(student.color[1]);
+    </script>
+</body>
+</html>
