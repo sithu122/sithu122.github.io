@@ -1,0 +1,335 @@
+@font-face {
+    font-family: Crete_Round ;
+    src: url("../Crete_Round/CreteRound-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Crete_Round ;
+    
+}
+/* nav Start */
+.hero{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	background: rgb(198, 201, 199);
+}
+.Logo{
+	width: 160px;
+	height: 180px;
+}
+
+nav{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a i {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: red;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-container .banner{
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,84,9,0.4654236694677871) 32%, rgba(255,252,0,0.08727240896358546) 100%);
+border-radius: 5px;
+width: 100%;
+margin: 1px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+box-shadow: 0 5px 10px #0005;
+overflow: hidden;
+}
+.banner-container .banner .shoe{
+    flex: 1 1 250px;
+    padding: 15px;
+    text-align: center;
+
+}
+.banner-container .banner .shoe immg{
+    width: 80%;
+}
+.banner-container .banner .content{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.banner-container .banner .content span{
+    color: white;
+    font-size: 40px;
+}
+.banner-container .banner .content p{
+    color: rgb(87, 82, 82);
+    font-size: 20px;
+}
+.banner-container .banner .content .btn{
+    display: block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    background: white;
+    color: red;
+    margin: 5px auto;
+    text-decoration: none;
+
+
+}
+.banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding: 10px;
+    flex: 1 1 250px;
+
+
+
+}
+.banner-container .banner .women img{
+    width: 100%;
+}
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.support div p{
+    display: inline-block;
+    margin-left: 10px;
+}
+.support div{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+}
+.support div p span{
+    color: gray;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Crete_Round ;
+}
+.wrapper{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.card{
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.image-section{
+    height: 250px;
+    background-color: rgb(236, 7, 7);
+}
+.card .img-one{
+    background-image: url("../image/undraw_Services_re_hu5n.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.card .img-two{
+    background-image: url("../image/undraw_delivery_truck_vt6p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.card .img-three{
+    background-image: url("../image/undraw_Following_re_d5aa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.content{
+    padding: 15px 10px;
+    text-align: center;
+}
+.content h2{
+    letter-spacing: 1.5px;
+}
+.content p{
+  margin: 15px 0px;
+  font-size: 15px;    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    flex-wrap:wrap ;
+}
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.7);
+}
+.card .imgContainer{
+    width: 100%;
+    height: 350px;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+
+
+}
+.title{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-weight: unset;
+}
+.card .imgContainer img{
+    width: 100%;
+} 
+.infoBox .rating {
+    margin: 5px 0;
+}
+.infoBox .rating i{
+    height: 10px;
+}
+
+.card .imgContainer img:nth-child(2){
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0.5s all;
+}
+.card .imgContainer:hover img:nth-child(2){
+    opacity: 1;
+    top: 0;
+}
+.infoBox .titl{
+    font-weight: 500;
+    color: red;
+    font-family: "Poppins", sans-serif;
+}
+.infoBox .price{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+
+}
+.infoBox .buttonGroup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.infoBox .buttonGroup button{
+     cursor: pointer; 
+    
+    /* outline: 0;
+    color: rgb(7, 7, 7);
+    padding: 7px 15px;
+    font-family: "Poppins", sans-serif; */ 
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: none;
+
+
+}
+.infoBox .buttonGroup button .buy{
+    background-color: white;
+}
+.infoBox .buttonGroup button.addToCart{
+    background-color: rgb(248, 246, 246);
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+footer{
+    margin-top: 0px;
+    background-color: black;
+    color: rgb(156, 151, 151);
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    margin: 0px 80px;
+}
+.footer_title{
+    
+    margin-bottom: 10px;
+}
+.footer_nav{
+    display: block;
+    color: rgb(156, 151, 151);
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.footer_address{
+    margin-bottom: 10px;
+}
+.footer_icon{
+    margin-right: 4px;
+    display: inline-block;
+}
+.social{
+    margin: 0px 5px;
+    color:  rgb(156, 151, 151);
+    display: inline-block;
+}
+/* end */

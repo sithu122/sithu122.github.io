@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Crete_Round ;
+    src: url("../Crete_Round/CreteRound-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Crete_Round ;
+    
+}
+/* nav Start */
+.hero{
+	position: relative;
+	width: 100%;
+	height: 15.5%;
+	background: rgb(198, 201, 199);
+}
+.Logo{
+	width: 160px;
+	height: 180px;
+}
+
+nav{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a i {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: red;
+}
+
+header{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content:center;
+	min-height: 100vh;
+	font-family: Crete_Round ;
+	background: linear-gradient(to bottom, #f8f8fa, #4cb7c5,#3a3a77);
+}
+.main{
+	margin: 50px;
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://th.bing.com/th/id/R.a35f213d33545a59b54a16d9b017f95b?rik=M1IxOagHSL8F4A&riu=http%3a%2f%2fimages.esellerpro.com%2f3502%2fI%2f249%2f87%2fDSC_3397.jpg&ehk=MlgY887%2bMQXdfzYp9qy4uhpsBoEp8ocsAcLxoZV8HBM%3d&risl=&pid=ImgRaw&r=0") no-repeat center / cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+label{
+	color: rgb(22, 20, 20);
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+    width: 60%;
+	height: 20px;
+	background: white;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: white;
+	background: #302b63;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #000;
+
+}
+
+.login{
+	height: 460px;
+	background: rgb(250, 249, 249);
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: rgb(22, 22, 22);
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);
+}
+#chk:checked ~ .signUP label{
+    transform: scale(.6);
+}
+
+footer{
+    margin-top: 0px;
+    background-color: black;
+    color: rgb(156, 151, 151);
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    margin: 0px 80px;
+}
+.footer_title{
+    
+    margin-bottom: 10px;
+}
+.footer_nav{
+    display: block;
+    color: rgb(156, 151, 151);
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.footer_address{
+    margin-bottom: 10px;
+}
+.footer_icon{
+    margin-right: 4px;
+    display: inline-block;
+}
+.social{
+    margin: 0px 5px;
+    color:  rgb(156, 151, 151);
+    display: inline-block;
+}
+/* end */
+
+

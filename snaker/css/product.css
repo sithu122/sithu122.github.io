@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Crete_Round ;
+    src: url("../Crete_Round/CreteRound-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Crete_Round ;
+    
+}
+/* nav Start */
+.hero{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	background: rgb(198, 201, 199);
+}
+.Logo{
+	width: 160px;
+	height: 180px;
+}
+
+nav{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a i {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    flex-wrap:wrap ;
+}
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.7);
+}
+.card .imgContainer{
+    width: 100%;
+    height: 350px;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+
+
+}
+.title{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-weight: unset;
+}
+.card .imgContainer img{
+    width: 100%;
+} 
+.infoBox .rating {
+    margin: 5px 0;
+}
+.infoBox .rating i{
+    height: 10px;
+}
+
+.card .imgContainer img:nth-child(2){
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0.5s all;
+}
+.card .imgContainer:hover img:nth-child(2){
+    opacity: 1;
+    top: 0;
+}
+.infoBox .titl{
+    font-weight: 500;
+    color: red;
+    font-family: "Poppins", sans-serif;
+}
+.infoBox .price{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+
+}
+.infoBox .buttonGroup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.infoBox .buttonGroup button{
+     cursor: pointer; 
+    
+    /* outline: 0;
+    color: rgb(7, 7, 7);
+    padding: 7px 15px;
+    font-family: "Poppins", sans-serif; */ 
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: none;
+
+
+}
+.infoBox .buttonGroup button .buy{
+    background-color: white;
+}
+.infoBox .buttonGroup button.addToCart{
+    background-color: rgb(248, 246, 246);
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+footer{
+    margin-top: 0px;
+    background-color: black;
+    color: rgb(156, 151, 151);
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    margin: 0px 80px;
+}
+.footer_title{
+    
+    margin-bottom: 10px;
+}
+.footer_nav{
+    display: block;
+    color: rgb(156, 151, 151);
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.footer_address{
+    margin-bottom: 10px;
+}
+.footer_icon{
+    margin-right: 4px;
+    display: inline-block;
+}
+.social{
+    margin: 0px 5px;
+    color:  rgb(156, 151, 151);
+    display: inline-block;
+}
+/* end */
