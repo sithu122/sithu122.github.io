@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+
+    <h1>String </h1>
+    <script>
+        let firstName='Developer';
+        let lastName='Si Thu Win Htay';
+        console .log(lastName.length);
+        let fullName=firstName+' '+lastName;
+        //let fullNmae=firstname.concat(' ',lastName);
+        console.log(fullName);
+        console.log("My Name is "+fullName);
+        console.log('<h1>'+fullName+'</h1><h1>'+lastName+'</h1>');
+        console.log(`My Name is ${fullName} . I am 21 Years.My Nick name is ${lastName}`);
+        console.log(fullName.toUpperCase());
+        console.log(fullName.toLowerCase());
+        console.log(fullName.substr(10,6));
+        let job='      web        Deloper             ';
+        console.log(job.trim())
+
+        let ser='javascript is Funny!';
+        console.log(ser.search('is'));
+
+        console.log(ser.indexOf('is'));
+        let rep="I Want to visit Yangon";
+        console.log(rep.replace('Yangon','Mandalay'));
+
+        let a='1,124,456';
+        console.log(typeof(a.replace(/\,/g,'')));
+
+        console.log('I\'m Si Thu');
+        console.log("I'm Si Thu");
+        console.log("I'm Si Thu,5'10\"");
+        console.log('I\'m Si Thu,5 10"');
+        console.log(`I'm Si Thu,5' 10"`)
+        
+
+
+    </script>
+</body>
+</html>

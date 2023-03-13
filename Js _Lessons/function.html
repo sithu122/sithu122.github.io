@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        function fullName(){
+                document.write(`<h1>Hello Nomeing Function`);
+        }
+        fullName();
+
+     function sum(num1,num2){
+        let result=num1+num2;
+        document.write(result+'<br>');
+
+     }
+     sum(40,60 );
+     sum(20,60 );
+     sum(30,60 );
+     sum(50,60 );
+
+     function sub(num1=100,num2=50){
+        let result=num1-num2;
+        document.write(result+'<br>')
+
+     }
+     sub(200,30);
+
+     function result(num1,num2){
+        let result=num1 * num2;
+        return result;
+     }
+     let mulResult=result(3,5);
+     document.write(mulResult+'<br>');
+
+     
+
+    </script>
+</body>
+</html>
