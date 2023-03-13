@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,43 +8,77 @@
     <title>Exam Result</title>
 </head>
 <body>
-    
-    <h1>Exam Result</h1>
-    <form name="form">
-        <label for="Myanmar">Name</label>
-        <input type="number" id="myanmar">
-        <br>
-
+    <h1>Result</h1>
+    <form action="" name="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
         <label for="myanmar">Myanmar</label>
-        <input type="number" id="myanmar">
-        <br>
+        <input type="number" id="myanmar" name="myanmar"><br>
         <label for="english">English</label>
-        <input type="number" id="myanmar">
-        <br>
+        <input type="number" id="english" name="english"><br>
         <label for="math">Math</label>
-        <input type="number" id="myanmar">
-        <br>
-
-        <label for="physic">Physic</label>
-        <input type="number" id="myanmar">
-        <br>
-
-        <label for="chemo\istry">Chemistry</label>
-        <input type="number" id="myanmar">
-        <br>
-
-        <label for="eco">Eco</label>
-        <input type="number" id="myanmar">
-        <br>
+        <input type="number" id="math" name="math"><br>
+        <label for="physic">physic</label>
+        <input type="number" id="physic" name="physic"><br>
+        <label for="chemistry">Chemistry</label>
+        <input type="number" id="chemistry" name="chemistry"><br>
+        <label for="Eco">Eco</label>
+        <input type="number" id="Eco" name="Eco"><br>
         <button type="button" onclick="result()">Result</button>
     </form>
 
     <script>
         function result(){
-           // alert('ok');
+            // alert('ok');
+            let name = document.myForm.name.value;
+            let myanmar = document.myForm.myanmar.value;
+            let english = document.myForm.english.value;
+            let math = document.myForm.math.value;
+            let physic = document.myForm.physic.value;
+            let chemistry = document.myForm.chemistry.value;
+            let bio = document.myForm.Eco.value;
 
-        }
+            
+            let myanmar_text = "";
+            let english_text = "";
+            let math_text = "";
+            let physics_text = "";
+            let chemistry_text = "";
+            let boi_text = "";
+
+           if(myanmar > 100 || english > 100 || math > 100 || physic > 100 || chemistry > 100 || bio > 100) {
+                alert("Your mark exceed 100!");
+           }else if(myanmar >= 40 && english >= 40 && math >= 40 && physic >= 40 && chemistry >= 40 && bio >= 40){
+                if(myanmar >= 80 || english >= 80 || math >= 80 || physic >= 80 || chemistry >= 80 || bio >= 80){
+                        if(myanmar >= 80 ){
+                            myanmar_text = "Myanmar,";
+                        }
+                        if(english >= 80){
+                            english_text = "English,";
+                        }
+                        if(math >= 80){
+                            math_text = "Math,";
+                        }
+                        if(physic >= 80){
+                            physics_text = "Physics,";
+                        }
+                        if(chemistry >= 80){
+                            chemistry_text = "Chemistry,";
+                        }
+                        if(Eco >= 80){
+                            Eco_text = "Biology";
+                        }
+                        let distinctions = ` with distinctions,`;
+                        document.write(`<h1>${name} is pass ${distinctions}${myanmar_text}${english_text}${math_text}${physics_text}${chemistry_text}${boi_text}.</h1>`);
+                        
+                    }else{
+                        document.write(`<h1>${name} is pass!</h1>`);
+                    }
+            }
+            else{
+                document.write(`<h1>${name} is fail!</h1>`)
+            }
+           }
     </script>
-
 </body>
 </html>
