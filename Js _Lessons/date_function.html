@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date_Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Date_Function</h1>
+    <p id="time"></p> -->
+    <div id="clock">
+		
+	</div>
+    <script>
+        //   let todayDate=new Date();
+        //   console.log(todayDate);
+        //   let fullYear=todayDate.getFullYear();
+        //   console.log(fullYear);
+        //   let fullMonth=todayDate.getMonth();
+        //   console.log(fullMonth);
+        //   let fullDate=todayDate.getDate();
+        //   console.log(fullDate);
+        //   let getDay=todayDate.getDay();
+        //   console.log(getDay);
+        //   let getHour=todayDate.getHours();
+        //   console.log(getHour);
+
+        //   let getSeconds=todayDate.getSeconds();
+        //   console.log(getSeconds);
+
+        //   let getMinutes=todayDate.getMinutes();
+        //   console.log(getMinutes);
+        //   let timeFormat=todayDate.toLocaleTimeString();
+        //   console.log(timeFormat);
+        //   setInterval(timeInterval,1000)
+          
+        //   function timeInterval() {
+        //     let date=new Date();
+        //     let seconds=date.getSeconds();
+        //     document.getElementById('time').innerHTML=seconds;
+
+             
+        //  } 
+               
+
+
+    
+function showTime(){
+    let date = new Date();
+    let hours = date.getHours();     
+    let minuits = date.getMinutes(); 
+    let seconds = date.getSeconds(); 
+
+    let formatHours = convertFormat(hours);
+
+    hours = checkTime(hours);
+
+    hours = addZero(hours);
+    minuits = addZero(minuits);
+    seconds = addZero(seconds);
+
+    document.getElementById('clock').innerHTML = `${hours} : ${minuits} : ${seconds}  ${formatHours}`;
+}
+
+function convertFormat(time){
+    let format = 'AM';
+
+    if(time >= 12){
+        format = 'PM';
+    }
+    return format;
+}
+
+function checkTime(time){
+    if(time > 12){
+        time = time - 12;
+    }
+
+    if(time === 0){
+        time = 12;
+    }
+
+    return time;
+}
+
+
+function addZero(time){
+    if(time < 10){
+        time = '0' + time;
+    }
+    return time;
+}
+
+
+showTime();
+setInterval(showTime, 1000);
+
+
+
+    </script>
+</body>
+</html>

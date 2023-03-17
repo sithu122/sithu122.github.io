@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+   <h1>Student Register</h1> 
+   <form action="" name="Sithu">
+    <label for="name">Nmae</label>
+    <input type="text" name="name"> <br> <br>
+    <label for="age">Age</label>
+    <input type="number" name="age"> <br> <br>
+    <label for="city">City</label>
+    <input type="text" name="city"> <br> <br>
+    <button type="button" onclick="showData()">Register</button>
+   </form>
+
+   <h1>Student List</h1>
+
+   <table border="1" cellpadding="30" cellspacing="1">
+      <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+      </thead>
+      <tbody id="tobody">
+
+            
+      </tbody>
+   </table>
+
+
+   <script>
+    var studentLISTAray=[];
+    function showData() {
+       let name=document.Sithu.name.value;
+       let age=document.Sithu.age.value;
+       let city=document.Sithu.city.value;
+      // console. log(name,age,city);
+
+       let student={
+        student_name :name,
+        student_age :age,
+        student_city :city
+       }
+       //console. log(student);
+       //array push
+       studentLISTAray.push(student);
+
+       //console.log(studentLISTAray);
+       //show Data
+       showStudent();
+
+     }
+
+      function showStudent(){
+         let html='';
+         // alert('ok');
+         for (let i = 0; i < studentLISTAray.length; i++) {
+             console.log(studentLISTAray[i]);
+             let studentObject=studentLISTAray[i];
+             html = html +`<tr>
+                         <td>${i+1}</td>
+                         <td>${studentObject.student_name}</td>
+                         <td>${studentObject.student_age}</td>
+                         <td>${studentObject.student_city}</td>
+                        </tr>`;
+
+            
+         } 
+         document.getElementById('tobody').innerHTML=html;   
+     }
+   </script>
+</body>
+</html>
