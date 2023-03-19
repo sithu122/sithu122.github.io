@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propery & Method</title>
+</head>
+<body>
+  <h1>Propery & Method</h1> 
+  <h2 id="createTextNodeId"></h2> 
+  <h3></h3>
+   <button onclick="createText()">Create Text Node</button>
+   <button onclick="createElementlesson()">Create Element Node</button>
+  <script>
+      function createText(){
+        //alert('ok')
+        let createTextNodeId=document.getElementById('createTextNodeId');
+        let createText=document.createTextNode('This Is Text Node');
+         createTextNodeId.appendChild(createText);
+
+      }
+
+      function createElementlesson(){
+       let h3=document.createElement('h3');
+       h3.innerText='Create h3 Element';
+       document.body.appendChild(h3);
+      }
+  </script>
+</body>
+</html>

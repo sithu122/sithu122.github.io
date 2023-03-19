@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Register</title>
+    <title>Daily Resport</title>
 </head>
 <body>
-   <h1>Student Register</h1> 
+  <h1>Daily Resport</h1>
+  <form action="" name="myForm">
+      <label for="date">Date</label>
+      <input type="date" name="date"><br><br>
+
+      <label for="item">Item</label>
+      <input type="text" name="item" id=""><br><br>
+
+      <label for="price">Price</label>
+      <input type="number" name="price" id=""><br><br>
+
+      <button type="button" onclick="showlist()">Add</button>
+
+  </form>
+  <br><br>
+  <table border="1" cellpadding="30" cellspacing="1">
+      <thead>
+          <tr>
+              <th>Date</th>
+              <th>Item</th>
+              <th>Price</th>
+          </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+      <tfoot>
+          <tr>
+              <td colspan="2">Total</td>
+              <td id="all"></td>
+          </tr>
+      </tfoot>
+  </table>
+   <!-- <h1>Student Register</h1> 
    <form action="" name="Sithu">
     <label for="name">Nmae</label>
     <input type="text" name="name"> <br> <br>
@@ -16,9 +47,9 @@
     <label for="city">City</label>
     <input type="text" name="city"> <br> <br>
     <button type="button" onclick="showData()">Register</button>
-   </form>
+   </form> -->
 
-   <h1>Student List</h1>
+   <!-- <h1>Student List</h1>
 
    <table border="1" cellpadding="30" cellspacing="1">
       <thead>
@@ -33,49 +64,97 @@
 
             
       </tbody>
-   </table>
+   </table> -->
 
 
    <script>
-    var studentLISTAray=[];
-    function showData() {
-       let name=document.Sithu.name.value;
-       let age=document.Sithu.age.value;
-       let city=document.Sithu.city.value;
-      // console. log(name,age,city);
+    // var studentLISTAray=[];
+    // function showData() {
+    //    let name=document.Sithu.name.value;
+    //    let age=document.Sithu.age.value;
+    //    let city=document.Sithu.city.value;
+    //   // console. log(name,age,city);
 
-       let student={
-        student_name :name,
-        student_age :age,
-        student_city :city
-       }
-       //console. log(student);
-       //array push
-       studentLISTAray.push(student);
+    //    let student={
+    //     student_name :name,
+    //     student_age :age,
+    //     student_city :city
+    //    }
+    //    //console. log(student);
+    //    //array push
+    //    studentLISTAray.push(student);
 
-       //console.log(studentLISTAray);
-       //show Data
-       showStudent();
+    //    //console.log(studentLISTAray);
+    //    //show Data
+    //    showStudent();
 
-     }
+    //  }
 
-      function showStudent(){
-         let html='';
-         // alert('ok');
-         for (let i = 0; i < studentLISTAray.length; i++) {
-             console.log(studentLISTAray[i]);
-             let studentObject=studentLISTAray[i];
-             html = html +`<tr>
-                         <td>${i+1}</td>
-                         <td>${studentObject.student_name}</td>
-                         <td>${studentObject.student_age}</td>
-                         <td>${studentObject.student_city}</td>
-                        </tr>`;
+    //   function showStudent(){
+    //      let html='';
+    //      // alert('ok');
+    //      for (let i = 0; i < studentLISTAray.length; i++) {
+    //          console.log(studentLISTAray[i]);
+    //          let studentObject=studentLISTAray[i];
+    //          html = html +`<tr>
+    //                      <td>${i+1}</td>
+    //                      <td>${studentObject.student_name}</td>
+    //                      <td>${studentObject.student_age}</td>
+    //                      <td>${studentObject.student_city}</td>
+    //                     </tr>`;
 
             
-         } 
-         document.getElementById('tobody').innerHTML=html;   
-     }
+    //      } 
+    //      document.getElementById('tobody').innerHTML=html;   
+    //  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     let dailyList=[];
+       function showlist(){
+        let date=document.myForm.date.value;
+        let item=document.myForm.item.value;
+        let price=parseInt(document.myForm.price.value);
+
+          let itemlist={
+            daily_date:date,
+            daily_item:item,
+          daily_price:price
+    }
+
+     dailyList.push(itemlist);
+        console.log(dailyList);
+        let data='';
+         let total=0;
+        for(let i=0;i<dailyList.length;i++)
+            {
+          let daily_object=dailyList[i];
+          data+=`<tr>
+                    <td>${daily_object.daily_date}</td>
+                    <td>${daily_object.daily_item}</td>
+                    <td>${daily_object.daily_price}</td>
+                  </tr>`;
+              total+=daily_object.daily_price;
+                }
+                document.getElementById('tbody').innerHTML=data;
+                document.getElementById('all').innerHTML=total;
+            }
+
+
+
+
    </script>
 </body>
 </html>

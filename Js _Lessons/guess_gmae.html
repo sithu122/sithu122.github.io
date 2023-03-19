@@ -8,9 +8,9 @@
 </head>
 <body>
     <script>
-        let secrectNo=8;
-        let guess=prompt('Enter a Number Between 1 to 10');
-
+        let secrectNo=12;
+        let guess=prompt('Enter a Number Between 1 to 20');
+        let amount=0
         while(secrectNo !=guess){
               if(guess < secrectNo) {
                 alert('Lower,Try again!');
@@ -19,9 +19,11 @@
 
               }
               guess=prompt('Enter a Number Between 1 to 10');
+              amount++;
         }
         
         document.write('corret');
+        document.write(' Wow'+amount+'time');
     </script>
 </body>
 </html>
