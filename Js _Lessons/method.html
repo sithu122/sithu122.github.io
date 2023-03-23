@@ -9,9 +9,17 @@
 <body>
   <h1>Propery & Method</h1> 
   <h2 id="createTextNodeId"></h2> 
-  <h3></h3>
+  <h3 id="myId"></h3>
+
+  <p id="setAtt">This is Set Attribute</p>
+  <p style="color:red; border: 1px solid black;padding: 30px;" id="getAtt">This id Get Attribute</p>
+
+  <p id="color" style="color: blue;">Change Color</p>
    <button onclick="createText()">Create Text Node</button>
    <button onclick="createElementlesson()">Create Element Node</button>
+   <button onclick="createSetAtt()">Create Set Attribute</button>
+   <button onclick="createGetAtt()">Create Get Attribute</button>
+   <button onclick="changeColor()">Change Color</button>
   <script>
       function createText(){
         //alert('ok')
@@ -24,8 +32,40 @@
       function createElementlesson(){
        let h3=document.createElement('h3');
        h3.innerText='Create h3 Element';
+       let myId=document.getElementById('myId')
        document.body.appendChild(h3);
       }
+         //set attribute
+       function createSetAtt(){
+       // alert('ok')
+       let setAttr=document.getElementById('setAtt');
+       setAttr.setAttribute('style','color:blue;')
+       }
+      //get Attribute
+      function createGetAtt(){
+       // alert('ok')
+       let getAttr=document.getElementById('getAtt');
+       console.log(getAttr.getAttribute('style'));
+       
+      }
+
+      function changeColor(){
+        let color=document.getElementById('color');
+        let colorName=color.getAttribute('style');
+        console.log(colorName);
+
+        if(colorName=="color:red;"){
+          color.removeAttribute('style');
+          color.setAttribute('style','color:green;');
+
+        }else{
+          color.removeAttribute('style');
+          color.setAttribute('style','color:red;S')
+        }
+      
+      }
+     
+      
   </script>
 </body>
 </html>
