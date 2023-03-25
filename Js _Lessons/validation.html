@@ -7,31 +7,91 @@
     <title>Validation</title>
 </head>
 <body>
-    <h1>js Valitation</h1>
-
-    <form action="register.php" onsubmit=" return checkValue()">
-        Name: <input type="text" id="name"> <span id="name_error"></span>  <br> <br>
-        Email: <input type="email" id="email"> <br> <br>
-        Password: <input type="password" id="password"> <br> <br>
-        Confirm Password: <input type="password" id="confirm_password"> <br> <br>
+    <h1>JS Validation</h1>
+    <form action="register.php" onsubmit="return checkValue()">
+        Name: <input type="text" id="name">  <span id="error"></span><br><br>
+        Email: <input type="email" id="email"> <span id="email_error"></span><br> <br>
+        Password: <input type="password" id="password"> <span id="password_error"></span><br><br>
+        Confirm Password: <input type="password" id="con_password"> <span id="confirm_error"></span><br><br>
 
         <input type="submit" value="Register">
     </form>
-
-
     <script>
         function checkValue() {
-           // alert('ok');
-           let name=document.getElementById('name').value;
-           if (name=="") {
-              document.getElementById('name').style.border='1px solid red';
-              document.getElementById('name_error')
-              return false;
-           }else{
-            return true;
-           }
-           
-          
+            // alert('ok');
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let con_password = document.getElementById('con_password').value;
+            
+            console.log(name);
+            console.log(email);
+            console.log(password);
+            console.log(con_password);
+            if(name == "") {
+                document.getElementById('name').style.border = '1px solid red';
+                let error= document.getElementById('error');
+                document.getElementById('error').innerText = "    Name is Required   ";
+                document.getElementById('error').style.color='red'; 
+                return false;
+            }
+            if (email=="") {
+                document.getElementById('email').style.border='1px solid red'
+                let r=document.getElementById('email_error');
+                document.getElementById('email_error').innerText="   Email is Require";
+                document.getElementById('email_error').style.color='red'; 
+                return false;
+
+            }
+            if (password=="") {
+                document.getElementById('password').style.border='1px solid red'
+                let p=document.getElementById('password_error');
+                document.getElementById('password_error').innerText="   Password is Require";
+                document.getElementById('password_error').style.color='red'; 
+                return false;
+            }
+            if (con_password=="") {
+                document.getElementById('con_password').style.border='1px solid red'
+                let p=document.getElementById('confirm_error');
+                document.getElementById('confirm_error').innerText="   Confirmpassword is Require";
+                document.getElementById('confirm_error').style.color='red'; 
+                return false;
+            }
+            else{
+                let nameBa = document.getElementById('name');
+                let b=document.getElementById('error');
+                nameBa.removeAttribute('style');
+                b.removeAttribute('style');
+
+                //email
+                let e=document.getElementById('email');
+                let e2=document.getElementById('email_error');
+                e.removeAttribute('style');
+                e2.removeAttribute('style');
+
+                //password
+                let p1=document.getElementById('password');
+                let p2=document.getElementById('password_error');
+                p1.removeAttribute('style');
+                p2.removeAttribute('style');
+
+
+                //ConfirmP
+                let d1=document.getElementById('con_password');
+                let d2=document.getElementById('confirm_error');
+                d1.removeAttribute('style');
+                d2.removeAttribute('style');
+                if (password!=con_password) {
+                //document.getElementById('com_pass').style.border='1px solid red';
+             document.getElementById('confirm_error').innerText="Passowrd is not correct!";
+             document.getElementById('confirm_error').style.color="red";
+             
+             return false;
+            }
+            }
+            return false;
+
+            
         }
     </script>
 </body>
