@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="day">This Day is Thursday</p>
+    <button id="add_css">Add Css</button>
+
+    
+
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#add_css').click(function(){
+                $('.day').css({'color':'red','background-color':'black'});
+
+            })
+
+        });
+    </script>
+</body>
+</html>

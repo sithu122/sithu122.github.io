@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+    <div id="addStudent">
+        <h3>Add New Student</h3>
+        Name: <input type="text" name="name" id="name"> <br> <br>
+        Email: <input type="email" name="email" id="email"> <br> <br>
+        Phone: <input type="number" name="phone" id="phone"> <br> <br>
+        Year: <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="First Year">First Year</option>
+            <option value="Second Year">Second Year</option>
+            <option value="Third Year">Third Year</option>
+        </select> <br><br>
+        <button id="add">Add Student</button>
+    </div>
+
+    <h3>Student List</h3>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            
+
+        </tbody>
+    </table>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let data='';
+            $('#add').click(function(){
+                let name = $('#name').val();
+                let email = $('#email').val();
+                let phone = $('#phone').val();
+                let year = $('#year').val();
+                // console.log(name,email,phone,year);
+
+                data += `<tr>
+                <td>1</td>
+                <td>${name}</td>
+                <td>${email}</td>
+                <td>${phone}</td>
+                <td>${year}</td>
+                </tr>`
+
+                $('#body').html(data);
+            })
+            
+        })
+    </script>
+</body>
+</html>

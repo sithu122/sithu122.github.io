@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci officia corrupti, illo quisquam facere unde rem minus odit mollitia? Nisi at corrupti aliquam ipsa reiciendis ab delectus soluta sequi maxime quam necessitatibus repellat, sunt accusantium modi quo nulla, impedit laudantium minus id. Laborum, quis. Provident nihil architecto consequatur quia ullam nesciunt dicta repellat accusantium facere eveniet obcaecati cumque cum veritatis, quos culpa, reprehenderit qui cupiditate reiciendis nulla rerum recusandae quidem tempora. Nobis eveniet consectetur impedit modi natus vel, adipisci obcaecati quam sed quas nemo. Amet alias porro facilis, deserunt necessitatibus fugiat! Culpa, consectetur nesciunt eaque ducimus repudiandae ea fugiat nemo sequi deleniti reprehenderit eos ipsum, tenetur obcaecati eveniet? Illum, necessitatibus in magnam omnis incidunt autem ratione excepturi, voluptates voluptate dignissimos rem nihil ad suscipit? Quia cum sequi corrupti dolorum ut incidunt, maiores necessitatibus. Impedit facilis nemo officiis natus, accusamus ratione a incidunt harum, deleniti quod minima voluptatum non illum aspernatur dignissimos! Laborum sapiente nam totam assumenda ipsum aperiam corrupti ipsa cum sed. Blanditiis cum animi laudantium nostrum. Molestiae, voluptate. Doloribus unde iusto consequatur cum et, nihil at id inventore deleniti dolorum eum quos doloremque excepturi debitis! Modi aliquid quo unde hic odio, eum eius voluptatibus ut repellat mollitia vero et commodi aliquam iure quas sunt provident molestias iste voluptatum facilis. Harum sit incidunt recusandae, sint placeat aperiam consectetur et molestiae culpa nesciunt vero soluta vel voluptates, possimus repellat, numquam dicta. Animi eaque perferendis quod repudiandae. Consequatur eligendi quam cum iste rem! Nulla commodi iure libero repellendus quisquam officia necessitatibus, quibusdam a ad iusto earum sint nostrum accusantium explicabo aperiam velit atque dolores ipsa, mollitia nemo! Tempora cumque sint cupiditate eligendi ad quos ipsa maiores incidunt dignissimos nihil quam a magni quo molestias corporis perspiciatis vitae commodi possimus debitis in, necessitatibus dolor minus minima laboriosam. Veritatis tempora similique voluptatum? Vitae, hic.
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade_in">FadeIn</button>
+    <button id="fade_out">FadeOut</button>
+    <button id="fade_toggle">FadeToggle</button>
+    <button id="fade_to">FadeTo</button>
+   
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(Document).ready(function(){
+             $('#hide').click(function(){
+               $('p').hide(5000,function(){
+                alert('p tag is Hide');
+             });   //hide(speed,callback function)
+            })
+
+
+           $('#show').click(function () {
+            $('p').show('slow'); //.show(speed,callback function)
+           })
+
+           $('#toggle').click(function(){
+            $('p').toggle(1100); //.toggle(speed,callback function)
+           })
+
+
+               $('#fade_out').click(function(){
+                $('p').fadeOut('slow');
+                })
+
+              $('#fade_in').click(function(){
+                $('p').fadeIn('slow');                //facein//faceout/(speed ,callback function)
+              })
+
+              $('#fade_toggle').click(function(){
+                $('p').fadeToggle(5000);
+              })
+
+              $('#fade_to').click(function(){
+                $('p').fadeTo(1000, 0.2);     //.face_to(speed ,oopacity(0,1 ,callback function)
+              })
+
+              
+
+        })
+    </script>
+</body>
+</html>

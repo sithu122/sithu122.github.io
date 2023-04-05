@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel{
+            max-width: 130px;
+            padding: 50px 0;
+            background-color: red;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <p id="panel">Animation</p>
+    <button id="start">Start</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#start').click(function(){
+                $('#panel').animate({left: '350px'},3000);
+                $('#panel').animate({top: '350px'},3000);
+                $('#panel').animate({left: '0px'},3000);
+                $('#panel').animate({top: '0px'},3000);
+            })
+              
+        });
+    </script>
+</body>
+</html>
