@@ -30,6 +30,7 @@
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Year</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="body">
@@ -42,26 +43,72 @@
     <script src="jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            let data='';
+
+            getData();
+
+           
+
+            function getData() {
+                let stuString =localStorage.getItem("students");
+               if (stuString) {
+                let stuArray =JSON.parse(stuString);
+                let data ='';
+                let i=1 ;
+                $ .each(stuArray, function(i,v){
+                data += `<tr>
+                <td>${i++}</td>
+                <td>${v.stu_name}</td>
+                <td>${v.stu_email}</td>
+                <td>${v.stu_phone}</td>
+                <td>${v.stu_year}</td>
+                <td> <button id="edit">Edit</button><button id="delete" data-id="${i}">Delete</button></td>
+                
+                </tr>`
+                });
+                $('#body').html(data);
+               }
+            }
+            
             $('#add').click(function(){
                 let name = $('#name').val();
                 let email = $('#email').val();
                 let phone = $('#phone').val();
                 let year = $('#year').val();
-                // console.log(name,email,phone,year);
+              console.log(name,email,phone,year);
 
-                data += `<tr>
-                <td>1</td>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${phone}</td>
-                <td>${year}</td>
-                </tr>`
+                 let students_obj={
+                    stu_name:name,
+                    stu_email:email,
+                    stu_phone:phone,
+                    stu_year:year
 
-                $('#body').html(data);
+
+                 }
+                 console.log(students_obj);
+
+                  let stuString =localStorage.getItem("students");
+                  let stuArray;
+                   if (stuString==null){
+                         stuArray =[];
+
+                     }else{
+                        stuArray = JSON.parse(stuString);
+                     }
+                     stuArray.push(students_obj);
+
+                    let stuData =JSON.stringify(stuArray)  
+                     localStorage.setItem("students",stuData)
+                      
+                     getData();
+
+            
             })
             
-        })
+            $('#body').on('click','#delete',function(){
+                let id =$(this).data('id');
+                console.log(id);
+            })
+        });
     </script>
 </body>
 </html>
