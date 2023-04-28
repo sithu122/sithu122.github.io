@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 10px 10px;
+            padding: 0px;
+            font-family: Crete_Round ;
+        }
+        
+        
+        .navbar{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .nav ul{
+            float: right;
+        }
+        .nav ul li{
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 10px ;
+            margin-right: 30px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav ul li a:hover{
+            color: red;
+        
+        }
+        .nav ul li i{
+            text-decoration: none;
+            color: black;
+        }
+        .nav ul li i:hover{
+            color: red;
+        
+        }
+        .new_arrival{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left: 90px;
+            margin-right: 90px;
+            grid-gap: 40px;
+            margin-top: 40px;
+
+         }
+        .new_arrival div{
+           padding: 30px;
+           box-shadow: 0px 10px 20px rgba(0, 0, 0, .3);
+           border-radius: 5px;
+   
+        }
+        .new_arrival_image{
+          width: 100%;
+        }
+        .divided_new{
+         display: flex;
+        }
+
+        .new_price{
+           float: left;
+    
+        }
+        .new_product_name{
+          margin-top: 5px;
+          text-decoration: none;
+        }
+        .detail_btn{
+            display: block;
+            background-color: blue;
+            position: absolute;
+            float: right;
+            padding: 6px 30px;
+            border: 1px solid blue;
+            color: rgb(241, 241, 245);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+   
+ 
+    
+
+    <!-- nav Start -->
+    <nav class="nav">
+        <div class="navbar">
+            <a href="">
+                IT Shop
+            </a>
+        </div>
+        <ul>
+            <li><a href="checkout.html">Home</a></li>
+            <li><i class="fa-solid fa-cart-shopping fa-1x"></i></li>
+            <span id="count_number"></span>
+            
+        </ul>
+
+    </nav>
+    <div class="new_arrival">
+        <div>
+            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07049401.png" alt="" class="new_arrival_image">
+            <p class="new_product_name">Laptop  1</p>
+            <p><small class="new_price"> Price : 500000MMK</small></p>
+             <br> <br>
+            <p><small class="detail_btn addToCart" data-id="1" data-name="Laptop 1" data-price="500000">Add To Cart</small></p>
+        </div>
+        
+        <div>
+            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07049401.png" alt="" class="new_arrival_image">
+            <p class="new_product_name">Laptop  2</p>
+            <p><small class="new_price"> Price : 500000MMK</small></p>
+            <br> <br> 
+            <p><small class="detail_btn addToCart" data-id="2" data-name="Laptop 2" data-price="500000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07049401.png" alt="" class="new_arrival_image">
+            <p class="new_product_name">Laptop  3</p>
+            <p><small class="new_price"> Price : 500000MMK</small></p>
+            <br> <br> 
+            <p><small class="detail_btn addToCart" data-id="3" data-name="Laptop 3" data-price="500000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07049401.png" alt="" class="new_arrival_image">
+            <p class="new_product_name">Laptop  4</p>
+            <p><small class="new_price"> Price : 500000MMK</small></p>
+            <br> <br>  
+            <p><small class="detail_btn addToCart" data-id="4" data-name="Laptop 4" data-price="500000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.HCkZrz23sSoFhkVlvpdETgHaHa?pid=ImgDet&rs=1" alt="" class="new_arrival_image">
+            <p class="new_product_name">iPhone  1</p>
+            <p><small class="new_price"> Price : 200000MMK</small></p>
+            <br> <br>
+            <p><small class="detail_btn addToCart" data-id="5" data-name="iphone 1" data-price="2000000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.HCkZrz23sSoFhkVlvpdETgHaHa?pid=ImgDet&rs=1" alt="" class="new_arrival_image">
+            <p class="new_product_name">iPhone 2</p>
+            <p><small class="new_price"> Price : 2000000MMK</small></p>
+            <br> <br> 
+            <p><small class="detail_btn  addToCart" data-id="6" data-name="iphone 2" data-price="2000000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.HCkZrz23sSoFhkVlvpdETgHaHa?pid=ImgDet&rs=1" alt="" class="new_arrival_image">
+            <p class="new_product_name">iPhone  3</p>
+            <p><small class="new_price"> Price : 20000MMK</small></p>
+            <br> <br>
+            <p><small class="detail_btn  addToCart" data-id="7" data-name="iphone 3" data-price="2000000">Add To Cart</small></p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.HCkZrz23sSoFhkVlvpdETgHaHa?pid=ImgDet&rs=1" alt="" class="new_arrival_image">
+            <p class="new_product_name">iPhone  4</p>
+            <p><small class="new_price"> Price : 2000000MMK</small></p>
+            <br> <br>
+            <p><small class="detail_btn  addToCart" data-id="8" data-name="iphone 4" data-price="2000000">Add To Cart</small></p>
+        </div>
+       
+       
+        
+    </div>
+       
+
+    <script src="jquery.min.js"></script>
+    <script src="count.js"></script>
+    <script>
+        
+            
+
+        $(document).ready(function () {
+
+
+
+            count();
+
+
+
+           
+
+            $('.addToCart').click(function(){
+                let item_id = $ (this).data ('id');
+                let item_name = $ (this).data ('name');
+                let item_price = $ (this).data ('price');
+
+                console.log(item_id ,item_name , item_price);
+
+                let shop_items ={
+                    id : item_id,
+                    name : item_name,
+                    price : item_price,
+                    qty : 1
+                }
+
+                console.log(shop_items);
+
+                let shopString = localStorage.getItem('shops');
+                let shopArray;
+                if (shopString == null) {
+                    shopArray =[];
+                }else {
+                    shopArray = JSON.parse(shopString);
+                }
+
+                let status = false;
+                $.each(shopArray, function(i , v){
+                    if (item_id == v.id) {
+                        status = true;
+                        v.qty++;
+                    }
+                })
+                if (status == false) {
+                    shopArray.push(shop_items);
+                }
+
+               
+
+                let shopData =JSON.stringify(shopArray);
+                localStorage.setItem('shops',shopData);
+                
+
+                count();
+                
+            })
+        });
+    </script>
+
+</body>
+</html>
