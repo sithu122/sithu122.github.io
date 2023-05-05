@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-light shadow">
+        <div class="container py-3">
+             <img src="images/1.svg" alt="" style="width: 70px;height: 90px;">
+            <a href="" class="navbar-brand">Si Thu</a>
+            <button class="navbar-toggler" data-bs-target="#Navbar" data-bs-to="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"id="Navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="" class="nav-link me-5">Home</a> </li>
+                    <li class="nav-item"><a href="" class="nav-link me-5">Service</a> </li>
+                    <li class="nav-item"><a href="" class="nav-link me-5">About</a> </li>
+                    <li class="nav-item"><a href="" class="nav-link me-5">Contact</a> </li>
+                    <li class="nav-item"><a href="" class="nav-link">Login</a> </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/2.jpg" alt="" srcset=""> 
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" alt="" srcset=""> 
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="Carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/2.jpg" alt=""> 
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" alt=""> 
+            </div>
+
+            <a href="#Carousel" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#Carousel" class="carousel-control-next" data-bs-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
