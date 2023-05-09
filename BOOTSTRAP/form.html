@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 class="text-center text-info my-5 display-6">Form Lesson</h1>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-4 col-4 col-lg-4">
+                <form action="#" method="post">
+                    <div class="mb-4">
+                        <label for="">Photo</label>
+                        <input type="file" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                    </div>
+                    
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="name" id="email" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="Passward" class="form-label">Passward</label>
+                        <input type="number" name="number" id="Passward" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="number" name="name" id="phone" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" name="date" id="date" class="form-control">
+                    </div>
+
+                    <label for="" class="d-block">Gender</label>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="male" class="form-check-input">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="female" class="form-check-input">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+
+                    <label for="" class="my-2 d-block">Hobbies</label>
+                    <div class="form-check">
+                        <input type="checkbox" id="swimming" class="form-check-input">
+                        <label for="swimming" class="form-check-label">Swimming</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="reading" class="form-check-input">
+                        <label for="reading" class="form-check-label">Reading</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="tarveling" class="form-check-input">
+                        <label for="tarveling" class="form-check-label">Traveling</label>
+                    </div>
+                    
+                    <label for="" class="my-3">Choose Gradude</label>
+                    <select name="" id="" class="form-select">
+                        <option value="">First Year</option>
+                        <option value="">Second Year</option>
+                        <option value="">Third Year</option>
+                        <option value="">Forth Year</option>
+                        
+                    </select>
+
+                    <label for="address" class="my-2">Address</label>
+                    <textarea name="" id="address" class="form-control">
+                          
+                    </textarea>
+                    <br><br>
+
+                    <input type="submit" class="btn btn-success float-end">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

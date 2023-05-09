@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 class="text-center text-danger my-5">Card Lessons</h1>
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">This is Card Header</h3>
+        </div>
+        <div class="card-body">
+            <p class="carde-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum est unde assumenda pariatur nisi quo iusto iure quas, doloribus incidunt consequuntur sint exercitationem eos dolorum repellat, reprehenderit quidem eius a!</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-info">Read More</button>
+        </div>
+    </div>
+       
+    <br><br>
+
+    <div class="card">
+        <img src="images/1.svg" alt="" class="card-img-top">
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptates veniam magni, dicta non voluptatum iusto inventore in dolorum corporis laborum nesciunt maxime. Quas consequuntur iusto perferendis obcaecati, dolorem rerum?</p>
+            <button class="btn btn-info">Read More</button>
+        </div>
+    </div>
+    
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+                <div class="card">
+                    <img src="images/1.svg" alt="">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit at sunt hic eligendi eveniet perferendis dolorum magni natus obcaecati totam non commodi, maxime doloribus fuga laborum a accusamus minus.
+                        </p>
+
+                        <button class="btn btn-info float-end" data-bs-target="#kody" data-bs-toggle="modal">Read More</button>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/1.svg" alt="">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit at sunt hic eligendi eveniet perferendis dolorum magni natus obcaecati totam non commodi, maxime doloribus fuga laborum a accusamus minus.
+                        </p>
+
+                        <button class="btn btn-info float-end">Read More</button>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/1.svg" alt="">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit at sunt hic eligendi eveniet perferendis dolorum magni natus obcaecati totam non commodi, maxime doloribus fuga laborum a accusamus minus.
+                        </p>
+
+                        <button class="btn btn-info float-end">Read More</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+<div class="modal fade" id="kody">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-headr">
+                <button class="btn-close float-end" data-bs-dismiss="modal"></button>
+                <h3>This is Modal Header!</h3>
+                <!-- <button class="btn-close float-end" data-bs-dismiss="modal"></button> -->
+            </div>
+            
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/1.svg" alt="" class="img-fluid">
+                            
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae ducimus dignissimos fugiat eius. Repudiandae nobis fugiat animi, et omnis dolorum ad nam odio dicta, sit, neque facilis pariatur fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, fugit est quam alias enim aliquam debitis, inventore dolorum distinctio obcaecati velit quisquam corrupti soluta error eum numquam cum at aut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
